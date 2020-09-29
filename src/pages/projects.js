@@ -1,0 +1,34 @@
+import React from 'react'
+import Container from '../layouts/container'
+import Navigation from '../components/navigation'
+import SiteMetadata from '../components/metadata'
+import { projects } from '../data/projects' //eslint-disable-line
+import styled from 'styled-components'
+import media from '../styles'
+import Project from '../components/project'
+
+const ProjectContainer = styled.div`
+  ${media.mobile`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  `}
+`
+
+export default function Projects() {
+  return (
+    <>
+      <SiteMetadata />
+      <Navigation />
+      <Container>
+        <h1>Projects</h1>
+        <p>Here are some of my development courseworks and projects</p>
+        <ProjectContainer>
+            {projects.map(project => <Project key={project.title} project={project} />)}
+            
+        </ProjectContainer>
+      </Container>
+    </>
+  )
+}

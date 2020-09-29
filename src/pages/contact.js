@@ -1,21 +1,20 @@
 import React from 'react'
 import Container from '../layouts/container'
-import Hero from '../components/hero'
 import Navigation from '../components/navigation'
 import SiteMetadata from '../components/metadata'
 
-export default function App() {
+export default function Contact() {
   return (
     <>
       <SiteMetadata />
       <Navigation />
-      <Hero />
       <Container>
-        <h1>
-          Hi, my name is Oskari Holopainen. I am a{' '}
-          <span style={{ color: '#2a3563' }}>web developer</span> based in
-          Helsinki.
-        </h1>
+        <h1>Contact information</h1>
+        <p>email: oskariholopa@gmail.com</p>
+        <p>github: https://github.com/osholopa</p>
+        <p>
+          linkedin: https://www.linkedin.com/in/oskari-holopainen-0b4995191/
+        </p>
       </Container>
     </>
   )
