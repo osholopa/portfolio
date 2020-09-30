@@ -6,6 +6,7 @@ import { projects } from '../data/projects' //eslint-disable-line
 import styled from 'styled-components'
 import media from '../styles'
 import Project from '../components/project'
+import Footer from '../components/footer'
 
 const ProjectContainer = styled.div`
   ${media.mobile`
@@ -29,6 +30,7 @@ export default function Projects() {
             
         </ProjectContainer>
       </Container>
+      <Footer />
     </>
   )
 }

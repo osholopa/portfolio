@@ -19,6 +19,8 @@ const globalStyles = css`
   }
   body {
     margin: 0;
+    height: 100%;
+    position: relative;
   }
   button:hover {
     background-color: ${props => props.theme.black};

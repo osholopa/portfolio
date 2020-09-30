@@ -3,6 +3,7 @@ import Container from '../layouts/container'
 import Hero from '../components/hero'
 import Navigation from '../components/navigation'
 import SiteMetadata from '../components/metadata'
+import Footer from '../components/footer'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           Helsinki.
         </h1>
       </Container>
+      <Footer />
     </>
   )
 }
