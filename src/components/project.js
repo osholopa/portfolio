@@ -25,7 +25,7 @@ const CardImg = styled.img`
   ${media.tablet`
     max-width: 80vw;
   `};
-  max-width: 50vw;
+  max-width: 40vw;
 `
 
 const Button = styled.button`
@@ -38,6 +38,13 @@ const CardContent = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  ${media.mobile`
+    max-width: 80vw;
+  `};
+  ${media.tablet`
+    max-width: 80vw;
+  `};
+  max-width: 20vw;
 `
 
 export default function Project({ project }) {

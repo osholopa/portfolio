@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: 'Bookstore',
+        description: 'In this Spring MVC application authenticated users can create, read and update books to a database. Deletion is reserved only for admin user role. Guest username is "user" and password is "user".',
+        link: 'https://osholopa-spring-bookstore.herokuapp.com/',
+        source: 'https://github.com/osholopa/bookstore',
+        img: require('../assets/bookstore.png'),
+        tech: ['Java', 'Spring', 'H2', 'Thymeleaf', 'MVC']
+    },
+    {
         title: 'Blog app',
         description: 'This is a bloglist app where users can like and anonymously comment on blogs, authenticated users can add or remove their own blogs. The backend is a REST API that is built on top of MongoDB database.',
         link: 'https://young-basin-26674.herokuapp.com/',
