@@ -1,7 +1,15 @@
 export const projects = [
     {
+        title: 'Travel-app',
+        description: 'This application uses AWS S3 bucket to store its images and MongoDB to store user and travel data. Spring security is used for authentication. Normal users can create entries, admin user can create and delete entries.',
+        link: 'https://osholopa-travel-app.herokuapp.com/',
+        source: 'https://github.com/osholopa/travel-app',
+        img: require('../assets/travel-app.png'),
+        tech: ['Java', 'Spring','AWS', 'MongoDB', 'Thymeleaf', 'MVC']
+    },
+    {
         title: 'Bookstore',
-        description: 'In this Spring MVC application authenticated users can create, read and update books to a database. Deletion is reserved only for admin user role. Guest username is "user" and password is "user".',
+        description: 'In this Spring MVC application authenticated users can create, read and update book information to a PostgreSQL database. Admin user role can delete info. Guest username is "user" and password is "user".',
         link: 'https://osholopa-spring-bookstore.herokuapp.com/',
         source: 'https://github.com/osholopa/bookstore',
         img: require('../assets/bookstore.png'),
