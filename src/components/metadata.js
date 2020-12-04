@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import favicon from '../assets/favicon.png'
+import favicon from '../assets/icons/favicon.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default function SiteMetadata({ children }) {

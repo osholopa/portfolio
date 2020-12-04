@@ -46,6 +46,17 @@ const CardContent = styled.div`
   `};
   max-width: 20vw;
 `
+const TechContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+const Tech = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+`
 
 export default function Project({ project }) {
   return (
@@ -65,6 +76,11 @@ export default function Project({ project }) {
               <Button className="btn">Check source</Button>
             </a>
           ) : null}
+          <TechContainer>
+            {project.tech.map(tech => (
+              <Tech key={tech}>{tech}</Tech>
+            ))}
+          </TechContainer>
         </CardContent>
       </ProjectCard>
     </>

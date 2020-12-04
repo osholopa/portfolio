@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import media from '../styles'
+import theme from '../styles/theme'
 
 const NavBar = styled.div`
   height: 10vh;
@@ -32,15 +33,27 @@ const Logo = styled.h1`
   padding: 5px;
   text-decoration: none;
   font-size: 2rem;
+  ${media.mobile`
+    font-size: 1.5rem;
+  `}
+  :hover {
+    background-color: ${theme.black};
+    color: ${theme.white};
+  }
 `
 
 const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 10vw;
+  margin: 0 10vw;
   ${media.tablet`
     display:flex;
+  `}
+  ${media.mobile`
+    display:flex;
+    margin: 0 2vw;
+    font-size: 2px;
   `}
 `
 
@@ -66,6 +79,10 @@ const Hamburger = styled.div`
   background-color: #111;
   width: 30px;
   height: 3px;
+  ${media.mobile`
+    width: 25px;
+    height: 2px;
+  `}
   transition: all 0.3s linear;
   align-self: center;
   position: relative;
@@ -75,6 +92,10 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
+    ${media.mobile`
+      width: 25px;
+      height: 2px;
+    `}
     background-color: #111;
     content: '';
     position: absolute;
@@ -94,6 +115,10 @@ const Hamburger = styled.div`
 
 const NavLink = styled(Link)`
   margin: 1rem auto;
+  :hover {
+    background-color: ${theme.black};
+    color: ${theme.white};
+  }
 `
 
 function NavLinks() {
