@@ -1,5 +1,4 @@
 import { css } from '@nfront/global-styles'
-import media from './index'
 
 const globalStyles = css`
   html {

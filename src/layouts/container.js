@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import media from '../styles'
 
 const StyledContainer = styled.div`
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin: 4rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
