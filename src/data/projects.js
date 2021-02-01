@@ -9,7 +9,7 @@ export const projects = [
         url: 'https://demo.kooste.fi',
       },
     ],
-    img: require('../assets/tennis.png'),
+    img: require('../assets/images/tennis.png'),
     tech: ['React', 'Material UI'],
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
         url: 'https://github.com/osholopa/bookstore',
       },
     ],
-    img: require('../assets/bookstore.png'),
+    img: require('../assets/images/bookstore.png'),
     tech: ['Java', 'Spring', 'H2', 'Thymeleaf', 'MVC'],
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
         url: 'https://fullstackopen.com/',
       },
     ],
-    img: require('../assets/bloglist.png'),
+    img: require('../assets/images/bloglist.png'),
     tech: ['React', 'Node', 'Express', 'MongoDB', 'Heroku', 'REST Api'],
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
         url: 'https://github.com/osholopa/clickpoints-backend',
       },
     ],
-    img: require('../assets/clickpoints-1568x882.jpg'),
+    img: require('../assets/images/clickpoints-1568x882.jpg'),
     tech: ['React', 'Node', 'Express', 'Socket.io', 'Heroku'],
   },
   {
@@ -92,7 +92,7 @@ export const projects = [
         url: 'https://github.com/osholopa/Platformer2D',
       },
     ],
-    img: require('../assets/platformer-1568x882.jpg'),
+    img: require('../assets/images/platformer-1568x882.jpg'),
     tech: ['Unity', 'WebGL', 'C#', 'Inkscape'],
   },
   {
@@ -108,7 +108,7 @@ export const projects = [
         url: 'https://github.com/osholopa/SnakeJS',
       },
     ],
-    img: require('../assets/snake.png'),
+    img: require('../assets/images/snake.png'),
     tech: ['HMTL', 'CSS', 'JavaScript'],
   },
 ]
