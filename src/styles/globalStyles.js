@@ -4,6 +4,7 @@ const globalStyles = css`
   html {
     font-family: ${props => props.theme.fontFamily};
     background-color: ${props => props.theme.white};
+    position: relative;
   }
   button {
     font-family: ${props => props.theme.fontFamily};
@@ -19,8 +20,7 @@ const globalStyles = css`
   }
   body {
     margin: 0;
-    height: 100%;
-    position: relative;
+    min-height: 100vh;
   }
   button:hover {
     background-color: ${props => props.theme.black};
@@ -28,10 +28,6 @@ const globalStyles = css`
   }
   a {
     color: ${props => props.theme.accent};
-  }
-  a:hover {
-    background-color: ${props => props.theme.black};
-    color: ${props => props.theme.white};
   }
   a > h1:hover {
     color: ${props => props.theme.white};

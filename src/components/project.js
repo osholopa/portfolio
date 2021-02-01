@@ -47,6 +47,17 @@ const CardContent = styled.div`
   `};
   max-width: 20vw;
 `
+const TechContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+const Tech = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+`
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -78,6 +89,11 @@ export default function Project({ project }) {
               </a>
             ))}
           </ButtonContainer>
+          <TechContainer>
+            {project.tech.map(tech => (
+              <Tech key={tech}>{tech}</Tech>
+            ))}
+          </TechContainer>
         </CardContent>
       </ProjectCard>
     </>

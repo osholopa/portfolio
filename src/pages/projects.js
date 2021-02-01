@@ -9,6 +9,7 @@ import Project from '../components/project'
 import Footer from '../components/footer'
 
 const ProjectContainer = styled.div`
+  width: 100%;
   ${media.mobile`
     display: flex;
     justify-content: space-around;
@@ -26,8 +27,9 @@ export default function Projects() {
         <h1>Projects</h1>
         <p>Here are some of my development courseworks and projects</p>
         <ProjectContainer>
-            {projects.map(project => <Project key={project.title} project={project} />)}
-            
+          {projects.map(project => (
+            <Project key={project.title} project={project} />
+          ))}
         </ProjectContainer>
       </Container>
       <Footer />
