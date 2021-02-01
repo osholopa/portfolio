@@ -94,6 +94,8 @@ const Hamburger = styled.div`
 
 const NavLink = styled(Link)`
   margin: 1rem auto;
+  text-decoration: none;
+  font-weight: bold;
 `
 
 function NavLinks() {

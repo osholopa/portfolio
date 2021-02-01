@@ -30,6 +30,7 @@ const CardImg = styled.img`
 
 const Button = styled.button`
   margin: 5px;
+  padding: 6px;
 `
 
 const CardContent = styled.div`
@@ -47,6 +48,21 @@ const CardContent = styled.div`
   max-width: 20vw;
 `
 
+const ButtonContainer = styled.div`
+  display: flex;
+  max-width: 20vw;
+  flex-direction: column;
+  align-items: center;
+  ${media.mobile`
+    max-width: 80vw;
+    flex-direction: row;
+  `};
+  ${media.tablet`
+    max-width: 80vw;
+    flex-direction: row;
+  `};
+`
+
 export default function Project({ project }) {
   return (
     <>
@@ -55,16 +71,13 @@ export default function Project({ project }) {
         <CardImg src={project.img} alt="" />
         <CardContent>
           <p>{project.description}</p>
-          {project.link !== '' ? (
-            <a href={project.link}>
-              <Button className="btn">Demo</Button>
-            </a>
-          ) : null}
-          {project.source !== '' ? (
-            <a href={project.source}>
-              <Button className="btn">Check source</Button>
-            </a>
-          ) : null}
+          <ButtonContainer>
+            {project.links.map(link => (
+              <a key={link.url} href={link.url}>
+                <Button className="btn">{link.label}</Button>
+              </a>
+            ))}
+          </ButtonContainer>
         </CardContent>
       </ProjectCard>
     </>
