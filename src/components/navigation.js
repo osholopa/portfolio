@@ -116,6 +116,7 @@ const Hamburger = styled.div`
 const NavLink = styled(Link)`
   margin: 1rem auto;
   text-decoration: none;
+  font-size: 24px;
   font-weight: bold;
   :hover {
     background-color: ${theme.black};
@@ -127,7 +128,7 @@ function NavLinks() {
   return (
     <>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects/">Projects</NavLink>
+      <NavLink to="/projects/">Portfolio</NavLink>
       <NavLink to="/contact/">Contact</NavLink>
     </>
   )

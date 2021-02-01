@@ -24,8 +24,8 @@ export default function Projects() {
       <SiteMetadata />
       <Navigation />
       <Container>
-        <h1>Projects</h1>
-        <p>Here are some of my development courseworks and projects</p>
+        <h1>Portfolio</h1>
+        <p>Here are some of my code projects including the more and the less useful ones. Majority of them are made either for learning purposes or just for fun.</p>
         <ProjectContainer>
           {projects.map(project => (
             <Project key={project.title} project={project} />

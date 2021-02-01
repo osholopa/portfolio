@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: 'Course enrollment system frontend',
+    title: 'Tennis course enrollment system frontend',
     description:
-      'This is a frontend demo of a tennis course enrollment system which I have been recently part of developing.',
+      'This is a frontend demo of a tennis course enrollment system which I have been recently part of developing. It is meant to be embedded in an iframe.',
     links: [
       {
         label: 'Live Demo',
@@ -11,23 +11,6 @@ export const projects = [
     ],
     img: require('../assets/images/tennis.png'),
     tech: ['React', 'Material UI'],
-  },
-  {
-    title: 'Bookstore',
-    description:
-      'In this Spring MVC application authenticated users can create, read and update books to a database. Deletion is reserved only for admin user role. Guest username is "user" and password is "user".',
-    links: [
-      {
-        label: 'Live Demo',
-        url: 'https://osholopa-spring-bookstore.herokuapp.com/',
-      },
-      {
-        label: 'Github URL',
-        url: 'https://github.com/osholopa/bookstore',
-      },
-    ],
-    img: require('../assets/images/bookstore.png'),
-    tech: ['Java', 'Spring', 'H2', 'Thymeleaf', 'MVC'],
   },
   {
     title: 'Blog app',
@@ -57,14 +40,47 @@ export const projects = [
     tech: ['React', 'Node', 'Express', 'MongoDB', 'Heroku', 'REST Api'],
   },
   {
-    title: 'Button click game',
+    title: 'Travel-app',
     description:
-      'Full-stack button click game made with React, Node, Express.js and Socket.io.',
-    links: 'https://cryptic-mountain-25746.herokuapp.com/',
+      'This was part of a Java Spring server programming course. This application uses AWS S3 bucket to store its images and MongoDB to store user and travel data. It uses spring security for authentication where normal users can create entries, admin users can create and delete entries.',
     links: [
       {
         label: 'Live Demo',
-        url: 'https://young-basin-26674.herokuapp.com/',
+        url: 'https://osholopa-travel-app.herokuapp.com/',
+      },
+      {
+        label: 'Github URL',
+        url: 'https://github.com/osholopa/travel-app',
+      },
+    ],
+    img: require('../assets/images/travel-app.png'),
+    tech: ['Java', 'Spring', 'AWS', 'MongoDB', 'Thymeleaf', 'MVC'],
+  },
+  {
+    title: 'Bookstore',
+    description:
+      'Also part of a Java Spring server programming course. In this Spring MVC application authenticated users can create, read and update books to a database. Deletion is reserved only for admin user role. Guest username is "user" and password is "user".',
+    links: [
+      {
+        label: 'Live Demo',
+        url: 'https://osholopa-spring-bookstore.herokuapp.com/',
+      },
+      {
+        label: 'Github URL',
+        url: 'https://github.com/osholopa/bookstore',
+      },
+    ],
+    img: require('../assets/images/bookstore.png'),
+    tech: ['Java', 'Spring', 'H2', 'Thymeleaf', 'MVC'],
+  },
+  {
+    title: 'Button click game',
+    description:
+      'Full-stack button click game made with React, Node, Express.js and Socket.io. Users start with 20 points and they consume the same counter on the server side. Each click costs 1 points and rewards (more points) are given on every 10th, 100th and 500th click.',
+    links: [
+      {
+        label: 'Live Demo',
+        url: 'https://cryptic-mountain-25746.herokuapp.com/',
       },
       {
         label: 'Frontend Github URL',

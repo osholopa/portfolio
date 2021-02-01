@@ -14,7 +14,7 @@ const StyledHero = styled.div`
 
 const Button = styled.button`
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
   font-size: 1.7rem;
   ${media.small`
     font-size: 1.5rem;

@@ -31,6 +31,7 @@ const CardImg = styled.img`
 const Button = styled.button`
   margin: 5px;
   padding: 6px;
+  background-color: #fbfbfb;
 `
 
 const CardContent = styled.div`
