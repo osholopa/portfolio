@@ -127,4 +127,22 @@ export const projects = [
     img: require('../assets/images/snake.png'),
     tech: ['HMTL', 'CSS', 'JavaScript'],
   },
+  {
+    title: 'Linux Server Course',
+    description:
+      'This course portfolio contains exercises related to a Linux server course I took in Haaga-Helia University of Applied Sciences.',
+    links: [
+      {
+        label: 'Live Solutions',
+        url: 'https://osholopa.github.io/linux-palvelimet/index.html',
+      },
+      {
+        label: 'Course Exercises',
+        url:
+          'http://terokarvinen.com/2020/linux-palvelimet-2020-alkukevat-kurssi-ict4tn021-3010/#alustavat-tehtavanannot',
+      },
+    ],
+    img: require('../assets/images/linux.png'),
+    tech: ['Linux', 'Apache', 'SSH', 'MySQL', 'PHP', 'Python', 'Flask'],
+  },
 ]

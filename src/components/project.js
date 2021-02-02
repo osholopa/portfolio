@@ -85,7 +85,12 @@ export default function Project({ project }) {
           <p>{project.description}</p>
           <ButtonContainer>
             {project.links.map(link => (
-              <a key={link.url} href={link.url}>
+              <a
+                key={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={link.url}
+              >
                 <Button className="btn">{link.label}</Button>
               </a>
             ))}

@@ -27,7 +27,7 @@ const StyledFooter = styled.footer`
 export default function Footer({position}) {
   return (
     <StyledFooter position={position}>
-      <p>Copyright &copy; {new Date().getFullYear()} Oskari Holopainen</p>
+      <p>&copy; {new Date().getFullYear()} Oskari Holopainen</p>
     </StyledFooter>
   )
 }
