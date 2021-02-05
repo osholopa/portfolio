@@ -1,6 +1,22 @@
 import { css } from '@nfront/global-styles'
+import media from './index'
 
 const globalStyles = css`
+  ${media.small`
+    html {
+      font-size: 16px;
+    }   
+  `}
+  ${media.tablet`
+    html {
+      font-size: 15px;
+    }   
+  `}
+  ${media.mobile`
+    html {
+      font-size: 14px;
+    }   
+  `}
   html {
     font-family: ${props => props.theme.fontFamily};
     background-color: ${props => props.theme.white};

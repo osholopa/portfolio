@@ -60,10 +60,11 @@ const Tech = styled.div`
   background-color: lightgray;
 `
 
-const ButtonContainer = styled.div`
+const LinkContainer = styled.div`
   display: flex;
   max-width: 20vw;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   ${media.mobile`
     max-width: 80vw;
@@ -83,7 +84,7 @@ export default function Project({ project }) {
         <CardImg src={project.img} alt="" />
         <CardContent>
           <p>{project.description}</p>
-          <ButtonContainer>
+          <LinkContainer>
             {project.links.map(link => (
               <a
                 key={link.url}
@@ -94,7 +95,7 @@ export default function Project({ project }) {
                 <Button className="btn">{link.label}</Button>
               </a>
             ))}
-          </ButtonContainer>
+          </LinkContainer>
           <TechContainer>
             {project.tech.map(tech => (
               <Tech key={tech}>{tech}</Tech>

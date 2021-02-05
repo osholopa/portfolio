@@ -15,7 +15,7 @@ const StyledContainer = styled.div`
   max-width: 80vw;
   `}
   ${media.tablet`
-  margin: 2rem 2 rem;
+  margin: 2rem 2rem;
   max-width: 90vw;
   `}
   ${media.mobile`

@@ -6,21 +6,22 @@ const StyledFooter = styled.footer`
   width: 100%;
   bottom: 0;
   position: ${props => props.position === 'absolute' ? 'absolute': 'inherit'};
-  padding: 2rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: #0f0a0aff;
+  background-color: #2f2f33;
   color: #f5efedff;
+  font-size: 0.8rem;
   ${media.small`
-    padding: 1.5rem;
+    padding: 0.375rem;
   `}
   ${media.tablet`
-    padding: 1rem;
+    padding: 0;
   `}
   ${media.mobile`
-    padding: 0.5rem;
+    padding: 0;
   `}
 `
 

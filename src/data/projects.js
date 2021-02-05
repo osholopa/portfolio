@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Tennis course enrollment system frontend',
     description:
-      'This is a frontend demo of a tennis course enrollment system which I have been recently part of developing. It is meant to be embedded in an iframe.',
+      'This is a frontend demo of a tennis course enrollment system which I have been recently part of developing. The layout might seem strange at first, but it is meant to be embedded inside an iframe.',
     links: [
       {
         label: 'Live Demo',
