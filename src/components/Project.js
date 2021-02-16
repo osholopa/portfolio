@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../layouts/container' //eslint-disable-line
-import Navigation from '../components/navigation' //eslint-disable-line
-import SiteMetadata from '../components/metadata' //eslint-disable-line
+import Navigation from './Navigation' //eslint-disable-line
+import SiteMetadata from './SiteMetadata' //eslint-disable-line
 import styled from 'styled-components' //eslint-disable-line
 import media from '../styles' //eslint-disable-line
 
@@ -79,7 +79,7 @@ const LinkContainer = styled.div`
 export default function Project({ project }) {
   return (
     <>
-      <h2>{project.title}</h2>
+      <h2 id={project.title.replace(/\s+/g, '-').toLowerCase()} name={project.title.replace(/\s+/g, '-').toLowerCase()}>{project.title}</h2>
       <ProjectCard>
         <CardImg src={project.img} alt="" />
         <CardContent>

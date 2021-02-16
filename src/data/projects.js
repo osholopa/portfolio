@@ -37,7 +37,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/bloglist.png'),
-    tech: ['React', 'Node', 'Express', 'MongoDB', 'Heroku', 'REST Api'],
+    tech: ['React', 'Node', 'MongoDB', 'Heroku'],
   },
   {
     title: 'Travel-app',
@@ -54,7 +54,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/travel-app.png'),
-    tech: ['Java', 'Spring', 'AWS', 'MongoDB', 'Thymeleaf', 'MVC'],
+    tech: ['Java', 'Spring', 'AWS', 'MongoDB'],
   },
   {
     title: 'Bookstore',
@@ -71,7 +71,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/bookstore.png'),
-    tech: ['Java', 'Spring', 'H2', 'Thymeleaf', 'MVC'],
+    tech: ['Java', 'Spring'],
   },
   {
     title: 'Button click game',
@@ -92,7 +92,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/clickpoints-1568x882.jpg'),
-    tech: ['React', 'Node', 'Express', 'Socket.io', 'Heroku'],
+    tech: ['React', 'Node', 'Socket.io', 'Heroku'],
   },
   {
     title: 'Unity 2D Platformer WebGL',
@@ -109,7 +109,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/platformer-1568x882.jpg'),
-    tech: ['Unity', 'WebGL', 'C#', 'Inkscape'],
+    tech: ['Unity', 'C#', 'Inkscape'],
   },
   {
     title: 'JS Snake Game',
@@ -125,7 +125,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/snake.png'),
-    tech: ['HMTL', 'CSS', 'JavaScript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     title: 'Linux Server Course',
@@ -143,6 +143,6 @@ export const projects = [
       },
     ],
     img: require('../assets/images/linux.png'),
-    tech: ['Linux', 'Apache', 'SSH', 'MySQL', 'PHP', 'Python', 'Flask'],
+    tech: ['Linux', 'Apache', 'MySQL', 'PHP', 'Python', 'Flask'],
   },
 ]

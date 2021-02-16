@@ -17,10 +17,15 @@ const globalStyles = css`
       font-size: 14px;
     }   
   `}
-  html {
+  html,body {
     font-family: ${props => props.theme.fontFamily};
-    background-color: ${props => props.theme.white};
-    position: relative;
+    background-color: ${props => props.theme.background};
+    //position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   button {
     font-family: ${props => props.theme.fontFamily};
@@ -35,8 +40,8 @@ const globalStyles = css`
     outline: none;
   }
   body {
-    margin: 0;
-    min-height: 100vh;
+    //margin: 0;
+    // min-height: 100vh;
   }
   button:hover {
     background-color: ${props => props.theme.black};
@@ -47,9 +52,6 @@ const globalStyles = css`
   }
   a > h1:hover {
     color: ${props => props.theme.white};
-  }
-  .hero {
-    background-color: ${props => props.theme.primary};
   }
 `
 

@@ -1,12 +1,13 @@
 import React from 'react'
 import Container from '../layouts/container'
-import Navigation from '../components/navigation'
-import SiteMetadata from '../components/metadata'
+import Navigation from '../components/Navigation'
+import SiteMetadata from '../components/SiteMetadata'
 import { projects } from '../data/projects' //eslint-disable-line
 import styled from 'styled-components'
 import media from '../styles'
-import Project from '../components/project'
-import Footer from '../components/footer'
+import Project from '../components/Project'
+import Footer from '../components/Footer'
+import BackToTop from '../components/BackToTop'
 
 const ProjectContainer = styled.div`
   width: 100%;
@@ -32,6 +33,7 @@ export default function Projects() {
           ))}
         </ProjectContainer>
       </Container>
+      <BackToTop/>
       <Footer />
     </>
   )

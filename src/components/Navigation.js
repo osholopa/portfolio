@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import media from '../styles'
 import theme from '../styles/theme'
 
-const NavBar = styled.div`
+const NavBar = styled.nav`
   height: 10vh;
   display: flex;
   background-color: #fafafa;
@@ -13,13 +13,13 @@ const NavBar = styled.div`
   text-transform: uppercase;
   border-bottom: 2px solid #f5efedff;
   margin: 0 auto;
-  padding: 0 5vw;
-  z-index: 2;
+  padding: 0 2%;
+  z-index: 10;
   align-self: center;
 
   ${media.tablet`
     position: sticky;
-    height: 8vh;
+    height: 6vh;
     top: 0;
     left: 0;
     right: 0;
@@ -30,12 +30,8 @@ const NavBar = styled.div`
 const Logo = styled.h1`
   color: black;
   align-self: center;
-  padding: 5px;
   text-decoration: none;
-  font-size: 2rem;
-  ${media.mobile`
-    font-size: 1.5rem;
-  `}
+  font-size: 1.5rem;
   :hover {
     background-color: ${theme.black};
     color: ${theme.white};
@@ -46,13 +42,13 @@ const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  margin: 0 10vw;
+  margin-left: auto;
   ${media.tablet`
     display:flex;
   `}
   ${media.mobile`
     display:flex;
-    margin: 0 2vw;
+    margin-left: auto;
     font-size: 2px;
   `}
 `
@@ -71,7 +67,7 @@ const Navbox = styled.div`
     padding-top: 10vh;
     background-color: #fafafa;
     transition: all 0.3s ease-in;
-    top: 8vh;
+    top: 6vh;
     left: ${props => (props.open ? '-100%' : '0')};
   `}
 `
@@ -116,7 +112,7 @@ const Hamburger = styled.div`
 const NavLink = styled(Link)`
   margin: 1rem auto;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   :hover {
     background-color: ${theme.black};
