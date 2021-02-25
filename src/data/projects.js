@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: 'Newsletter form',
+    description:
+      'A newsletter subscription form made with React and styled with SASS. It demonstrates my skills on how to implement custom styles on UI elements. The project includes custom text fields, checkboxes, buttons and snackbars inside a responsive form',
+    links: [
+      {
+        label: 'Live Demo',
+        url: 'https://jovial-bell-2f4b94.netlify.app',
+      },
+      {
+        label: 'Github URL',
+        url: 'https://github.com/osholopa/newsletter-form',
+      },
+    ],
+    img: require('../assets/images/newsletter-form.jpg'),
+    tech: ['React', 'SASS'],
+    mobileObjectPosition: '35%',
+  },
+  {
     title: 'Tennis course enrollment system frontend',
     description:
       'This is a frontend demo of a tennis course enrollment system which I have been recently part of developing. The layout might seem strange at first, but it is meant to be embedded inside an iframe.',
@@ -53,8 +71,9 @@ export const projects = [
         url: 'https://github.com/osholopa/travel-app',
       },
     ],
-    img: require('../assets/images/travel-app.png'),
+    img: require('../assets/images/travel-app.jpg'),
     tech: ['Java', 'Spring', 'AWS', 'MongoDB'],
+    mobileObjectPosition: '55%',
   },
   {
     title: 'Bookstore',
@@ -70,7 +89,7 @@ export const projects = [
         url: 'https://github.com/osholopa/bookstore',
       },
     ],
-    img: require('../assets/images/bookstore.png'),
+    img: require('../assets/images/bookstore.jpg'),
     tech: ['Java', 'Spring'],
   },
   {
@@ -93,9 +112,10 @@ export const projects = [
     ],
     img: require('../assets/images/clickpoints-1568x882.jpg'),
     tech: ['React', 'Node', 'Socket.io', 'Heroku'],
+    mobileObjectPosition: '45%',
   },
   {
-    title: 'Unity 2D Platformer WebGL',
+    title: 'Unity 2D Platformer',
     description:
       '2D side scroller prototype game made with Unity, C# and built with WebGL. I made most of the graphics with Inkscape.',
     links: [
@@ -110,6 +130,7 @@ export const projects = [
     ],
     img: require('../assets/images/platformer-1568x882.jpg'),
     tech: ['Unity', 'C#', 'Inkscape'],
+    mobileObjectPosition: '95%',
   },
   {
     title: 'JS Snake Game',
@@ -124,8 +145,9 @@ export const projects = [
         url: 'https://github.com/osholopa/SnakeJS',
       },
     ],
-    img: require('../assets/images/snake.png'),
+    img: require('../assets/images/snake.jpg'),
     tech: ['HTML', 'CSS', 'JavaScript'],
+    mobileObjectPosition: '55%',
   },
   {
     title: 'Linux Server Course',
@@ -142,7 +164,8 @@ export const projects = [
           'http://terokarvinen.com/2020/linux-palvelimet-2020-alkukevat-kurssi-ict4tn021-3010/#alustavat-tehtavanannot',
       },
     ],
-    img: require('../assets/images/linux.png'),
+    img: require('../assets/images/linux.jpg'),
     tech: ['Linux', 'Apache', 'MySQL', 'PHP', 'Python', 'Flask'],
+    mobileObjectPosition: '45%',
   },
 ]

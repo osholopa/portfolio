@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
+import styled from 'styled-components'
 import './Slider.css'
 import { icons } from '../data/icons' //eslint-disable-line
 import ButtonLink from './ButtonLink'
+import media from '../styles'
+
+const SlideImage = styled.img`
+  object-position: 0% 0%;
+  ${media.mobile`
+    object-position: ${props =>
+      props.mobileObjectPosition ? props.mobileObjectPosition : '0% 0%'};
+  `}
+`
 
 export default function Slider({ slides }) {
   const [current, setCurrent] = useState(0)
@@ -30,13 +40,24 @@ export default function Slider({ slides }) {
           >
             {index === current && (
               <div className="slide-img-container">
-                <img src={slide.img} alt="slide" className="image" />
+                <SlideImage
+                  src={slide.img}
+                  alt="slide"
+                  mobileObjectPosition={
+                    slide.mobileObjectPosition
+                      ? slide.mobileObjectPosition
+                      : undefined
+                  }
+                  className="image"
+                />
                 <ButtonLink
                   anchor
                   className="slide-btn"
                   text="Read more"
-                  href={`/projects#${slide.title.replace(/\s+/g, '-').toLowerCase()}`}
-                  endIcon={<IoIosArrowForward/>}
+                  href={`/projects#${slide.title
+                    .replace(/\s+/g, '-')
+                    .toLowerCase()}`}
+                  endIcon={<IoIosArrowForward />}
                 />
                 <div className="icons">
                   {slide.tech.map((tech, index) => {
@@ -44,7 +65,7 @@ export default function Slider({ slides }) {
                       iconObject => iconObject.label === tech
                     )
                     return (
-                      <div style={{margin: '0px 10px'}} key={index}>
+                      <div style={{ margin: '0px 10px' }} key={index}>
                         {iconObject.icon}
                         <p style={{ display: 'inline' }}>{iconObject.label}</p>
                       </div>

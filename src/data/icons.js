@@ -19,10 +19,15 @@ import {
   SiInkscape,
   SiJava,
   SiSpring,
+  SiSass,
 } from 'react-icons/si'
 import {FaNodeJs, FaReact} from 'react-icons/fa'
 
 export const icons = [
+  {
+    label: 'SASS',
+    icon: <SiSass />,
+  },
   {
     label: 'MongoDB',
     icon: <SiMongodb />,

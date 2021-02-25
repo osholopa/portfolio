@@ -4,6 +4,7 @@ import Navigation from './Navigation' //eslint-disable-line
 import SiteMetadata from './SiteMetadata' //eslint-disable-line
 import styled from 'styled-components' //eslint-disable-line
 import media from '../styles' //eslint-disable-line
+import { icons } from '../data/icons' //eslint-disable-line
 
 const ProjectCard = styled.div`
   margin: 0.5rem auto;
@@ -79,7 +80,12 @@ const LinkContainer = styled.div`
 export default function Project({ project }) {
   return (
     <>
-      <h2 id={project.title.replace(/\s+/g, '-').toLowerCase()} name={project.title.replace(/\s+/g, '-').toLowerCase()}>{project.title}</h2>
+      <h2
+        id={project.title.replace(/\s+/g, '-').toLowerCase()}
+        name={project.title.replace(/\s+/g, '-').toLowerCase()}
+      >
+        {project.title}
+      </h2>
       <ProjectCard>
         <CardImg src={project.img} alt="" />
         <CardContent>
@@ -97,9 +103,17 @@ export default function Project({ project }) {
             ))}
           </LinkContainer>
           <TechContainer>
-            {project.tech.map(tech => (
-              <Tech key={tech}>{tech}</Tech>
-            ))}
+            {project.tech.map((tech, index) => {
+              const iconObject = icons.find(
+                iconObject => iconObject.label === tech
+              )
+              return (
+                <div style={{ margin: '0px 10px' }} key={index}>
+                  {iconObject.icon}
+                  <p style={{ display: 'inline' }}>{iconObject.label}</p>
+                </div>
+              )
+            })}
           </TechContainer>
         </CardContent>
       </ProjectCard>
