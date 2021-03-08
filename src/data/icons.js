@@ -20,10 +20,20 @@ import {
   SiJava,
   SiSpring,
   SiSass,
+  SiNextDotJs,
+  SiTypescript,
 } from 'react-icons/si'
-import {FaNodeJs, FaReact} from 'react-icons/fa'
+import { FaNodeJs, FaReact } from 'react-icons/fa'
 
 export const icons = [
+  {
+    label: 'TypeScript',
+    icon: <SiTypescript />,
+  },
+  {
+    label: 'Next.js',
+    icon: <SiNextDotJs />,
+  },
   {
     label: 'SASS',
     icon: <SiSass />,
