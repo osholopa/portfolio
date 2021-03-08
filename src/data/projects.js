@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Tomato timer',
     description:
-      "I always forget to keep breaks when studying and a timer felt like easily approachable hobby project. I've never used Next.js before so I decided to try it here",
+      "I always forget to keep breaks when I'm studying and a timer felt like easily approachable hobby project. I've never used Next.js before so I decided to try it here",
     links: [
       {
         label: 'Demo',
