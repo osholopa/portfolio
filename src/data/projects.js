@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Tomato timer',
     description:
-      "I always forget to keep breaks when I'm studying and a timer felt like easily approachable hobby project. I've never used Next.js before so I decided to try it here",
+      "Sometimes one has to make effort to maintain structure and focus in daily activities. I always forget to have breaks when I'm working and a timer felt like easily approachable hobby project. I've never used Vue.js before so I decided to try it here.",
     links: [
       {
         label: 'Demo',
@@ -14,7 +14,7 @@ export const projects = [
       },
     ],
     img: require('../assets/images/pomodoro.png'),
-    tech: ['TypeScript', 'Next.js', 'Inkscape'],
+    tech: ['Vue.js', 'Inkscape'],
   },
   {
     title: 'Newsletter form',
